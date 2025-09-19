@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/auth_bg">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <!-- Back icon -->
+                <ImageView
+                    android:id="@+id/backIcon"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:src="@drawable/back_icon" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Foreground content -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/marungko_logo_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Maligayang Pagbabalik!"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="#B38A4F"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <EditText
+                        android:id="@+id/emailEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="@drawable/input_text_bg"
+                        android:fontFamily="@font/madimione_regular"
+                        android:hint="Email"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FED8A4"
+                        android:textSize="26sp"
+                        android:shadowColor="#C3842C"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:gravity="center_vertical|start"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:inputType="textEmailAddress"
+                        android:elevation="10dp"/>
+
+                    <EditText
+                        android:id="@+id/passwordEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="@drawable/input_text_bg"
+                        android:fontFamily="@font/madimione_regular"
+                        android:hint="Password"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FED8A4"
+                        android:textSize="26sp"
+                        android:shadowColor="#C3842C"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:gravity="center_vertical|start"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:elevation="10dp"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/signupBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="Gumawa ng bagong account"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="#B38A4F"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="2"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="25dp"/>
+
+                <ImageButton
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/login_btn"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="20dp"/>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

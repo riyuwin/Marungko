@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aralin1.Aralin1_Item1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/main_background_2">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <!-- Back icon -->
+                <ImageView
+                    android:id="@+id/backIcon"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:src="@drawable/back_icon" />
+
+                <!-- Logo -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/marungko_logo_2" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Foreground content -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="left" >
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/bumalikBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="start"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="1/4"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:fontFamily="@font/mochiypopone_regular"
+                        android:layout_gravity="start"/>
+
+                    <ImageButton
+                        android:id="@+id/magpatuloyBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/magpatuloy_btn"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="4dp"
+                    android:src="@drawable/aralin1_header"  />
+
+                <ImageView
+                    android:id="@+id/magaaralBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:padding="4dp"
+                    android:src="@drawable/letrang_m"
+                    android:layout_marginTop="30dp"/>
+
+                <ImageButton
+                    android:id="@+id/pakingganBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/pakinggan_btn"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Pakinggan"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
